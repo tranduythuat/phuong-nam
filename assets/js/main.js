@@ -597,11 +597,15 @@
 
     const form = e.target;
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+    const data = {
+      ...Object.fromEntries(formData.entries()),
+      party: formData.getAll("party").join(", "),
+    }
 
     const {
       name,
       confirm,
+      party,
       guest_number,
       wish,
     } = data;
@@ -657,6 +661,19 @@
 
     const t = messages[lang] || messages.vi;
 
+    if (confirm === "Sẽ tham dự" && !formData.getAll("party").length) {
+      Swal.fire({
+        title: lang === "en" ? "Choose a party" : "Vui lòng chọn tiệc",
+        text: lang === "en"
+          ? "Select at least one party: groom's family or bride's family."
+          : "Vui lòng chọn ít nhất Tiệc nhà trai hoặc Tiệc nhà gái.",
+        icon: "warning",
+        confirmButtonText: "OK",
+        confirmButtonColor: "#806331ff",
+      });
+      return;
+    }
+
     // =========================
     // Loading popup
     // =========================
@@ -679,6 +696,7 @@
         body: new URLSearchParams({
           name,
           confirm,
+          party,
           guest_number,
           wish,
         }),
@@ -726,30 +744,29 @@
   }
 
   function initRSVP() {
-    // const confirm = document.querySelectorAll('input[name="confirm"]')
-    // confirm.forEach((radio) => {
-    //   radio.addEventListener("change", function () {
-    //     const locationGroup = document.getElementById("location-group");
-    //     if (this.value === "Yes") {
-    //       locationGroup.classList.remove("hidden");
-    //     } else {
-    //       locationGroup.classList.add("hidden");
-    //     }
-    //   });
-    // })
-    // const defaultConfirm = document.querySelector('input[name="confirm"]:checked');
-    // if (defaultConfirm && defaultConfirm.value !== "Yes") {
-    //   document.getElementById("location-group").classList.add("hidden");
-    // }
-
     const form = document.forms["rsvpForm"];
-    const form_nhatrai = document.forms["rsvpForm_nhatrai"];
     if (form) {
+      const partyOptions = form.querySelector(".party-options");
+      const attendanceChoices = form.querySelectorAll('input[name="confirm"]');
+
+      const updatePartyOptions = () => {
+        const isAttending = form.querySelector('input[name="confirm"]:checked')?.value === "Sẽ tham dự";
+        partyOptions.querySelectorAll('input[name="party"]').forEach((checkbox) => {
+          checkbox.disabled = !isAttending;
+          if (!isAttending) checkbox.checked = false;
+        });
+        partyOptions.classList.toggle("is-disabled", !isAttending);
+      };
+
+      attendanceChoices.forEach((choice) => choice.addEventListener("change", updatePartyOptions));
+      form.addEventListener("reset", () => window.setTimeout(updatePartyOptions));
+      updatePartyOptions();
+
       form.addEventListener("submit", (e) => handleFormSubmit(e, "nhagai", "vi"));
     }
-    if (form_nhatrai) {
-      form_nhatrai.addEventListener("submit", (e) => handleFormSubmit(e, "nhatrai", "vi"));
-    }
+    // if (form_nhatrai) {
+    //   form_nhatrai.addEventListener("submit", (e) => handleFormSubmit(e, "nhatrai", "vi"));
+    // }
   }
 
   function initAnimations() {

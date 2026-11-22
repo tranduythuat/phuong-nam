@@ -800,7 +800,7 @@ header {
   align-items: center;
   color: #2c2722;
   position: relative;
-  font-family: "SVN-GothamBook", sans-serif;
+  font-family: "Lora", sans-serif;
 }
 .timeline-location .content .title {
   font-family: "Lora", sans-serif;
@@ -819,7 +819,7 @@ header {
   margin-bottom: 9%;
 }
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-date .date-number {
-  font-family: "SVN-gothamBold", sans-serif;
+  font-family: "Lora", sans-serif;
   font-size: 24px;
 }
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-date .date-desc {
@@ -859,7 +859,7 @@ header {
   text-align: left;
 }
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content .event-info h3 {
-  font-family: "SVN-gothamBold", sans-serif;
+  font-family: "Lora", sans-serif;
   font-size: 20px;
   line-height: 1.3;
   text-align: center;
@@ -961,7 +961,7 @@ header {
   width: 70%;
   text-align: left;
   padding-left: 10%;
-  padding-right: 2%;
+  padding-right: 5%;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content h3 {
   font-family: "SVN-gothamBold", sans-serif;
@@ -1312,7 +1312,8 @@ header {
   width: 100%;
   margin-bottom: 3%;
 }
-.rsvp .form-group input[type=radio] {
+.rsvp .form-group input[type=radio],
+.rsvp .form-group input[type=checkbox] {
   display: none;
 }
 .rsvp .form-group .radio-button {
@@ -1326,11 +1327,29 @@ header {
   border: 1px solid #5a3a21;
   cursor: pointer;
 }
-.rsvp .form-group input[type=radio]:hover + .radio-button {
+.rsvp .form-group.party-options.is-disabled .radio-button {
+  background-color: #e5e5e5;
+  border-color: #c8c8c8;
+  color: #888;
+  cursor: not-allowed;
+}
+.rsvp .form-group.party-options.is-disabled .radio-button:hover {
+  background-color: #e5e5e5;
+  border-color: #c8c8c8;
+  color: #888;
+}
+.rsvp .form-group.party-options.is-disabled input[type=checkbox]:checked + .radio-button {
+  background-color: #e5e5e5;
+  border-color: #c8c8c8;
+  color: #888;
+}
+.rsvp .form-group input[type=radio]:hover + .radio-button,
+.rsvp .form-group input[type=checkbox]:hover + .radio-button {
   background-color: #5a3a21;
   color: #ffffff;
   transition: 0.3s ease;
 }
+.rsvp .form-group input[type=checkbox]:checked + .radio-button,
 .rsvp .form-group input[type=radio]:checked + .radio-button {
   background-color: #5a3a21;
   color: #ffffff;
@@ -1347,11 +1366,8 @@ header {
   background-color: transparent;
   font-size: 11.2px;
 }
-.rsvp .form-group input.input-text::placeholder {
-  font-size: 0.8em;
-}
 .rsvp .form-group textarea.input-text {
-  font-size: 11px;
+  font-size: 11.2px;
   max-width: 311px;
   width: 100%;
   aspect-ratio: 311/71;
@@ -1367,7 +1383,12 @@ header {
 .rsvp .form-group.options-group {
   display: flex;
   justify-content: space-between;
-  margin-top: 22%;
+  margin-top: 19%;
+}
+.rsvp .form-group.party-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
 }
 .rsvp .wish-box {
   text-align: center;
@@ -1420,11 +1441,9 @@ header {
     font-size: 1.8vw;
     width: 27.5vw;
   }
-  .rsvp .form-group input.input-text {
-    font-size: 2.25vw;
-  }
+  .rsvp .form-group input.input-text,
   .rsvp .form-group textarea.input-text {
-    font-size: 1.8vw;
+    font-size: 2.24vw;
   }
   .rsvp .wish-box h2 {
     font-size: 3.332vw;

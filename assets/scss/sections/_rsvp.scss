@@ -55,7 +55,8 @@
         width: 100%;
         margin-bottom: 3%;
 
-        input[type="radio"] {
+        input[type="radio"],
+        input[type="checkbox"] {
             display: none;
         }
 
@@ -69,12 +70,33 @@
             cursor: pointer;
         }
 
-        input[type="radio"]:hover+.radio-button {
+        &.party-options.is-disabled .radio-button {
+            background-color: #e5e5e5;
+            border-color: #c8c8c8;
+            color: #888;
+            cursor: not-allowed;
+        }
+
+        &.party-options.is-disabled .radio-button:hover {
+            background-color: #e5e5e5;
+            border-color: #c8c8c8;
+            color: #888;
+        }
+
+        &.party-options.is-disabled input[type="checkbox"]:checked+.radio-button {
+            background-color: #e5e5e5;
+            border-color: #c8c8c8;
+            color: #888;
+        }
+
+        input[type="radio"]:hover+.radio-button,
+        input[type="checkbox"]:hover+.radio-button {
             background-color: $secondary-color;
             color: #ffffff;
             transition: .3s ease;
         }
 
+        input[type="checkbox"]:checked+.radio-button,
         input[type="radio"]:checked+.radio-button {
             background-color: $secondary-color;
             color: #ffffff;
@@ -94,11 +116,11 @@
         }
 
         input.input-text::placeholder {
-            font-size: .8em;
+            // font-size: .8em;
         }
 
         textarea.input-text {
-            font-size: $base-font-size;
+            font-size: 11.2px;
             max-width: 311px;
             width: 100%;
             aspect-ratio: 311 / 71;
@@ -116,7 +138,13 @@
     .form-group.options-group {
         display: flex;
         justify-content: space-between;
-        margin-top: 22%;
+        margin-top: 19%;
+    }
+
+    .form-group.party-options {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
     }
 
     .wish-box {
@@ -183,12 +211,9 @@
                 width: 27.5vw;
             }
 
-            input.input-text {
-                font-size: 2.25vw;
-            }
-
+            input.input-text,
             textarea.input-text {
-                font-size: 1.8vw;
+                font-size: calc((11.2/ 500) * 100vw);
             }
         }
 
