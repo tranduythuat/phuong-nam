@@ -1,0 +1,126 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.greeting {
+    // background: url('../../assets/images/greeting.webp') no-repeat center/cover;
+    max-width: 500px;
+    width: 100%;
+    aspect-ratio: 500 / 890;
+
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("../../assets/images/couple/hero_bg.jpg");
+        background-size: 100%;
+        background-position: left center;
+        filter: blur(5px);
+        transform: scale(1.05);
+        /* tránh viền trắng khi blur */
+        z-index: 0;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 364px;
+        aspect-ratio: 364 / 650;
+        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/our_story_bg.png') no-repeat center/cover;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 300;
+            color: $secondary-color;
+            padding-bottom: 6%;
+        }
+
+        p {
+            text-align: justify;
+            text-align-last: center;
+            padding-bottom: 4%;
+            line-height: 180%;
+            margin: 0 15%;
+        }
+
+        .signature {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            // margin-left: -8%;
+
+            .img-box {
+                img.logo-couple {
+                    width: 40px;
+                    height: auto;
+                }
+            }
+
+
+            .wife-name,
+            .husband-name {
+                width: 32%;
+                @include flex-center;
+                flex-direction: column;
+
+                .photo {
+                    margin-top: 12%;
+                    width: 100%;
+                    max-width: 150px;
+                    aspect-ratio: 5 / 7;
+                }
+            }
+
+            .wife-name .photo {
+                background: url('../../assets/images/couple/wife.jpg') no-repeat center / 260%;
+            }
+
+            .husband-name .photo {
+                background: url('../../assets/images/couple/husband.jpg') no-repeat center / 100%;
+            }
+
+            p {
+                display: block;
+                font-size: 20px;
+                font-family: '1FTV-VIP-Bengoda', sans-serif;
+                font-weight: 300;
+                color: $secondary-color;
+                padding: 0;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            max-width: calc((364 / 500) * 100vw);
+
+            h2 {
+                font-size: calc((20px / 500px) * 100vw);
+            }
+
+            p {
+                // font-size: 1.85vw;
+                font-size: calc(($base-font-size / 500px) * 100vw);
+            }
+
+            .signature {
+                .img-box {
+                    img.logo-couple {
+                        width: calc((40 / 500) * 100vw);
+                    }
+                }
+
+                p {
+                    font-size: calc((20 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}

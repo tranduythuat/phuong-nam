@@ -1,0 +1,89 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.thankyou {
+    background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/our-story-bg.webp') no-repeat center/cover,
+        url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/base-our-story-bg.webp') no-repeat bottom/cover;
+    max-width: 500px;
+    width: 100%;
+    aspect-ratio: 500 / 890;
+
+    h2 {
+        font-size: 20.83px;
+        font-weight: 300;
+        color: $secondary-color;
+        margin-bottom: 6%;
+    }
+
+    .photo {
+        max-width: 305px;
+        width: 100%;
+        aspect-ratio: 305 / 200;
+        // background-color: $secondary-color;
+        margin-bottom: 0%;
+        perspective: 1000px;
+        overflow: hidden;
+        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/PhuongChi-TheLam/album/7.webp') no-repeat 100% 34% / 120%;
+
+        img {
+            width: 120%;
+            height: 100%;
+            object-position: 100% 72%;
+            object-fit: cover;
+        }
+    }
+
+    .subtext {
+        padding: 0 20%;
+
+        .divider {
+            margin-bottom: 6%;
+
+            img {
+                width: 26px;
+                height: auto;
+            }
+        }
+
+        .divider:last-child {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+
+        .text {
+
+            text-align: justify;
+            text-align-last: center;
+
+            p {
+                padding-bottom: 6%;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        h2 {
+            font-size: calc((20.83px / 500px) * 100vw);
+        }
+
+        .photo {
+            max-width: calc((305px / 500px) * 100vw);
+        }
+
+        .subtext {
+            .divider {
+                img {
+                    width: calc((26px / 500px) * 100vw);
+                }
+            }
+
+            .text {
+                p {
+                    font-size: calc(($base-font-size / 500px) * 100vw);
+                }
+            }
+        }
+    }
+}

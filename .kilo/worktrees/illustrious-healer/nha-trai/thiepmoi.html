@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiến & Ngân</title>
+
+  <!-- Các thông tin khác cho Open Graph -->
+  <meta property="og:title" content="Công Tiến & Hồng Ngân" />
+  <meta property="og:description" content="25.10.2026" />
+  <meta property="og:type" content="website" />
+
+  <meta property="og:image" content="">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="400">
+
+  <link rel="stylesheet" href="../dist/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <!-- <div class="letter-section">
+    <div class="content" id="open-card">
+      <div class="subtext">
+        Dành cho bạn, vị khách <br />
+        đặc biệt của chúng tôi
+      </div>
+      <a href="#" class="open-card" id="open-card">Mở thiệp</a>
+    </div>
+  </div> -->
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <input type="checkbox" name="" id="nav-toggle" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#greeting">Gửi những người thân thương</a></li>
+          <li><a href="#couple">Hẹn ngày mình gặp gỡ</a></li>
+          <li><a href="#our-story">Chuyện chúng mình </a></li>
+          <li><a href="#photos">Vì chúng ta gìn giữ</a></li>
+          <li><a href="#rsvp">Xác nhận khách mời</a></li>
+          <!-- <li><a href="#qrcode">Gửi quà mừng cưới</a></li> -->
+          <li><a href="#thankyou">Lời cảm ơn đặc biệt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- SECTION 1: COVER / ENVELOPE -->
+    <section id="cover" class="cover">
+      <img src="../assets/images/letter_nhatrai.jpg" alt="cover" data-animate="fade-up">
+    </section>
+
+    <!-- SECTION 2: OPEN LETTER / GREETING -->
+    <section id="greeting" class="greeting">
+      <div class="content" data-animate="fade-in">
+        <h2 data-animate="fade-down">Gửi những người </br> Thân Thương</h2>
+        <p data-animate="fade-right">
+          Chúng mình – Công Tiến & Hồng Ngân – muốn gửi đến những người thân thương nhất lời mời trân quý cho ngày hai
+          đứa
+          chính
+          thức bước sang hành trình mới. Sau hơn 6 năm cùng đi qua bao cung bậc cảm xúc, tụi mình trân trọng khoảnh khắc
+          được sẻ
+          chia niềm vui này cùng mọi người – những người đã dõi theo, chứng kiến và thương yêu chúng mình trong suốt
+          chặng đường
+          ấy.
+        </p>
+        <div class="signature" data-animate="fade-up">
+          <div class="wife-name">
+            <p>Công Tiến</p>
+          </div>
+          <div class="img-box">
+            <img src="../assets/images/logo.png" alt="Logo couple" class="logo-couple">
+          </div>
+          <div class="husband-name">
+            <p>Hồng Ngân</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: COUPLE INTRO -->
+    <section id="couple" class="couple">
+      <h2 data-animate="fade-up">Hẹn ngày mình gặp gỡ</h2>
+      <div class="couple-photo" data-animate="flip-vertical-left">
+        <div class="frame"></div>
+        <img src="../assets/images/rect1652.png" class="tape" alt="">
+      </div>
+      <div class="save-the-date">
+        <p data-animate="fade-right">save the date</p>
+      </div>
+      <div class="subtext" data-animate="fade-down">
+        <p>Ngày ấy đang dần đến gần!</p>
+        <p>Chúng mình mong được gặp lại những người thân thương, cùng nhau tạm gác những bộn bề ngoài kia để cùng chia
+          sẻ niềm vui
+          và viết tiếp câu chuyện của Tiến & Ngân.</p>
+      </div>
+      <div class="date-time">
+        <p class="date" data-animate="fade-right">25.10.2026</p>
+        <p class="time" data-animate="fade-right">09:30 - Chủ Nhật</p>
+      </div>
+      <div class="countdown">
+        <div class="months item" data-animate="fade-up">
+          <p class="value months" id="months-1">00</p>
+          <p class="title">Tháng</p>
+        </div>
+        <div class="weeks item" data-animate="fade-up">
+          <p class="value weeks" id="weeks-1">00</p>
+          <p class="title">Tuần</p>
+        </div>
+        <div class="days item" data-animate="fade-up">
+          <p class="value days" id="days-1">00</p>
+          <p class="title">Ngày</p>
+        </div>
+        <div class="seconds item" data-animate="fade-up">
+          <p class="value seconds" id="seconds-1">00</p>
+          <p class="title">Giây</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 4: LOCATION -->
+    <section id="location" class="location">
+      <div class="frame">
+        <h2 class="location-name" data-animate="fade-up">Nhà hàng <br>Minh Nga 379</h2>
+        <p class="address" data-animate="fade-right">Quốc lộ 21A, Thôn 4,Thạch Hòa, Thạch Thất, Hà Nộ</p>
+        <div class="map">
+          <img src="../assets/images/map_nhatrai.png" alt="Bản đồ địa điểm cưới" data-animate="flip-vertical-left" />
+        </div>
+        <a target="_blank" href="https://maps.app.goo.gl/5oYi8pN5SvxVjnX56?g_st=ic" class="btn-map"
+          data-animate="fade-down">Xem
+          bản đồ</a>
+      </div>
+
+      <div class="timeline">
+        <div class="logo">
+          <img src="../assets/images/logo-timeline.png" alt="Logo couple timeline" data-animate="flip-vertical-left">
+        </div>
+        <p class="title" data-animate="fade-down">Timeline</p>
+        <div class="time-box ">
+          <div class="timeline-item first">
+            <div class="icon">
+              <img src="../assets/images/icons/camera.webp" alt="" class="icon-animate">
+            </div>
+            <p class="description time">09:30 | Đón Khách</p>
+          </div>
+          <!-- <div class="timeline-item second">
+            <div class="icon">
+              <img src="assets/images/icons/rings.webp" alt="" class="icon-animate">
+            </div>
+            <p class="description time">18:15 | Hôn Lễ</p> 
+        </div>-->
+          <div class="timeline-item third">
+            <div class="icon">
+              <img src="../assets/images/icons/cup.webp" alt="" class="icon-animate">
+            </div>
+            <p class="description time">10:00 | Khai tiệc</p>
+          </div>
+          <!-- <div class="timeline-item four">
+            <div class="icon">
+              <img src="assets/images/icons/party.webp" alt="" class="icon-animate">
+            </div>
+            <p class="description time">19:30 - Giao Lưu</p>
+          </div> -->
+          <!--<div class="timeline-item five">
+            <div class="icon">
+              <img src="assets/images/icons/heart.webp" alt="">
+            </div>
+            <p class="description">21:00 - Kết thúc</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: STORY / ABOUT -->
+    <section id="our-story" class="our-story">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="" data-animate="flip-vertical-left">
+      </div>
+      <h2 data-animate="fade-up">Chuyện chúng mình</h2>
+      <h3 data-animate="fade-right">Tiến & Ngân</h3>
+      <p class="subtext" data-animate="fade-down">ngày chúng mình </br> kể chuyện</p>
+      <div class="photo">
+        <img src="../../assets/images/couple_ourstory.webp" alt="" data-animate="flip"
+          style="object-fit: cover; object-position: 100% 53%;">
+      </div>
+      <div class="text">
+        <p data-animate="fade-right">
+          Từ những năm tháng vô tư của tuổi học trò, đến lần đầu gặp lại, rồi hơn 6 năm bên nhau với đủ hỉ – nộ – ái –
+          ố… tụi
+          mình đã học được cách lắng nghe, thấu hiểu và cùng trưởng thành.
+        </p>
+        <p data-animate="fade-right">
+          Mỗi giai đoạn đều mang một tên gọi, một cột mốc, và một câu chuyện riêng – nhưng điều không đổi là tụi mình
+          vẫn chọn
+          “người đồng hành” này, qua từng năm tháng.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PHOTOS -->
+    <section id="photos" class="photos">
+      <h2 data-animate="fade-up">Vì chúng mình </br> gìn giữ</h2>
+      <p data-animate="fade-right">Tụi mình muốn lưu giữ những kỷ niệm ấy – những khoảnh khắc dung dị nhưng đầy ý nghĩa,
+        như cách mà chúng mình vẫn gìn giữ
+        nhau suốt chặng đường dài.
+      </p>
+      <div class="photo-grid">
+        <div class="row">
+          <div class="column">
+            <div class="img-box" data-animate="fade-up">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/1.webp" alt=""
+                style="object-position: 100% 40%;">
+            </div>
+          </div>
+          <div class="column" data-animate="flip-vertical-left">
+            <div class="img-box">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/2.webp" alt=""
+                style="object-position: 100% 58%;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="img-box" data-animate="fade-up">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/3.webp"
+                style="object-position: 100% 50%;" alt="">
+            </div>
+          </div>
+          <div class="column">
+            <div class="img-box" data-animate="flip-vertical-left">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/4.webp" alt=""
+                style="object-position: 100% 56%;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="img-box" data-animate="fade-up">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/5.webp"
+                style="object-position: 100% 48%;" alt="">
+            </div>
+          </div>
+          <div class="column">
+            <div class="img-box" data-animate="flip-vertical-left">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/6.webp" alt=""
+                style="object-position: 100% 69%;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="img-box" data-animate="fade-up">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/7.webp"
+                style="object-position: 100% 39%;" alt="">
+            </div>
+          </div>
+          <div class="column">
+            <div class="img-box" data-animate="flip-vertical-left">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/8.webp" alt=""
+                style="object-position: 100% 19%;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="img-box" data-animate="fade-up">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/9.webp"
+                style="object-position: 100% 31%;" alt="">
+            </div>
+          </div>
+          <div class="column">
+            <div class="img-box" data-animate="flip-vertical-left">
+              <img loading="lazy" class="photo-item"
+                src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/10.webp" alt=""
+                style="object-position: 100% 57%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-preview">
+        <button class="preview-close">×</button>
+        <div class="swiper preview-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/1.webp">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/2.webp">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/3.webp">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/4.webp">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/5.webp">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/6.webp">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/7.webp">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/8.webp">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/9.webp">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/album/10.webp">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="preview-counter">
+          <span class="current">1</span>
+          /
+          <span class="total">10</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: RSVP -->
+    <section id="rsvp" class="rsvp">
+      <div class="content" data-animate="fade-in">
+        <h2 class="title" data-animate="fade-up">Xác nhận khách mời</h2>
+        <p class="subtext" data-animate="fade-right">Chúng mình rất mong được đón tiếp mọi người chỉn chu nhất trong
+          ngày đặc biệt ấy.
+          Nếu bạn có thể sắp xếp tham dự, hãy
+          cho chúng mình biết <strong>trước ngày 20/10</strong> để mọi thứ được chuẩn bị thật chu đáo nhé!</p>
+
+        <form id="rsvpForm">
+          <div class="form-group options-group" data-animate="fade-up">
+            <input type="radio" class="confirm" id="confirm-yes" value="Sẽ tham dự" name="confirm" checked>
+            <label for="confirm-yes" class="radio-button confirm-yes">SẼ THAM DỰ</label>
+            <input type="radio" class="confirm" id="confirm-no" value="Không thể tham dự" name="confirm">
+            <label for="confirm-no" class="radio-button confirm-no">TIẾC QUÁ! MÌNH </br> KHÔNG THỂ THAM DỰ</label>
+          </div>
+
+          <div class="form-group" data-animate="fade-up">
+            <input type="text" class="name input-text" id="name" name="name" placeholder="Tên Khách Mời" required>
+          </div>
+
+          <div class="form-group" data-animate="fade-up">
+            <input type="text" class="guest-number input-text" id="guest-number" name="guest_number"
+              placeholder="Số Người Đi Kèm (Không bao gồm bản thân bạn)">
+          </div>
+
+          <div class="wish-box">
+            <h2 data-animate="fade-down">Một chút nhắn gửi từ </br> “người thương”</h2>
+            <p data-animate="fade-up">Tiến và Ngân luôn lắng nghe những mong muốn từ cả nhà có thắc mắc, hay cần hỗ
+              trợ bất cứ điều gì, đừng ngại cả nhà cứ ghi rõ để chúng em/cháu sắp xếp chu đáo nhé!</p>
+
+            <div class="form-group" data-animate="fade-right">
+              <textarea class="wish input-text" id="wish" name="wish" placeholder="Viết lời nhắn gửi:"></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn" data-animate="fade-up">XÁC NHẬN</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- <section class="qrcode" id="qrcode">
+      <div class="content">
+        <div class="wax-box btn-box">
+          <img src="assets/images/wax.png" alt="" id="qr-btn">
+        </div>
+        <div class="subtext">
+          Gửi quà mừng cưới dành tặng cô dâu và chú rể nhé!
+        </div>
+      </div>
+    </section> -->
+
+    <!-- SECTION 7: THANK YOU -->
+    <section id="thankyou" class="thankyou">
+      <h2 class="title" data-animate="fade-up">Lời cảm ơn </br> đặc biệt</h2>
+      <div class="photo">
+        <img src="../../assets/images/end_photo.webp" alt="" data-animate="flip"
+          style="object-fit: cover; object-position: 100% 50%;">
+      </div>
+      <div class="subtext">
+        <div class="divider">
+          <img src="assets/images/icons/divider.webp" alt="" data-animate="fade-right">
+        </div>
+        <div class="text">
+          <p data-animate="fade-right">
+            Chúng mình biết rắng, chẳng có hành trình nào thật sự trọn vẹn nếu đi
+            một mình. Cảm ơn gia đình hai bên đã luôn yêu thương và thấu hiểu. Cảm ơn bạn bè đã đồng hành, lắng nghe và
+            chia sẻ từng
+            niềm vui nhỏ. Và cảm ơn
+            nhau - vì đã chọn ở lại, cùng nhau trưởng thành, và gìn giữ tình yêu này Ngày hôm ấy sẽ là của tụi mình,
+            nhưng niềm vui
+            ấy - xin được chia sẻ
+            chung với tất cả mọi người
+          </p>
+          <!-- <img src="assets/images/end-text.png" alt=""> -->
+        </div>
+        <div class="divider">
+          <img src="assets/images/icons/divider.webp" alt="" data-animate="fade-left">
+        </div>
+      </div>
+    </section>
+    <div class="music-box">
+      <div class="label">
+        <div id="musicLabel" class="musicLabel">Turn the</br> Music on</div>
+      </div>
+      <div class="player" id="player-btn" aria-label="Play/Pause">
+        <img id="iconSvg" src="../assets/images/cd.png" alt="Music Icon" />
+      </div>
+    </div>
+    <audio id="audio" preload="auto"
+      src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/music/Alex%20Warren%20-%20Ordinary%20(Official%20Lyric%20Video).mp3"
+      loop type="audio/mpeg"></audio>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../assets/js/gsap-animations.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    const targetDate1 = new Date("2026-10-24T16:30:00");
+    // const targetDate2 = new Date("2026-08-02T16:00:00");
+
+    function updateCountdown(targetDate, suffix) {
+      const now = new Date();
+      const monthsEl = document.getElementById(`months-${suffix}`);
+      const weeksEl = document.getElementById(`weeks-${suffix}`);
+      const daysEl = document.getElementById(`days-${suffix}`);
+      const secondsEl = document.getElementById(`seconds-${suffix}`);
+
+      if (!monthsEl || !weeksEl || !daysEl || !secondsEl) return;
+
+      if (now >= targetDate) {
+        monthsEl.textContent = "00";
+        weeksEl.textContent = "00";
+        daysEl.textContent = "00";
+        secondsEl.textContent = "00";
+        return;
+      }
+
+      let temp = new Date(now);
+      let months = 0;
+
+      while (true) {
+        let next = new Date(temp);
+        next.setMonth(next.getMonth() + 1);
+        if (next > targetDate) break;
+        temp = next;
+        months++;
+      }
+
+      let remainingMs = targetDate - temp;
+      let remainingDays = Math.floor(remainingMs / (1000 * 60 * 60 * 24));
+      let weeks = Math.floor(remainingDays / 7);
+      let days = remainingDays % 7;
+      let remainingSeconds = Math.floor((targetDate - now) / 1000) % 60;
+
+      monthsEl.textContent = String(months).padStart(2, "0");
+      weeksEl.textContent = String(weeks).padStart(2, "0");
+      daysEl.textContent = String(days).padStart(2, "0");
+      secondsEl.textContent = String(remainingSeconds).padStart(2, "0");
+    }
+
+    updateCountdown(targetDate1, "1");
+    // updateCountdown(targetDate2, "2");
+
+    setInterval(() => updateCountdown(targetDate1, "1"), 1000);
+    // setInterval(() => updateCountdown(targetDate2, "2"), 1000);
+  </script>
+  <!-- <script>
+    function toggleQR(e) {
+      e.preventDefault();
+      Swal.fire({
+        title: "",
+        text: "",
+        imageUrl: "https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/khoa-chau/RW1_3371.jpg",
+        imageWidth: '100%',
+        imageHeight: "auto",
+        imageAlt: "Custom image",
+        html: `
+              <div class="qrcode-box">
+                  <div class="item">
+                    <div class="qrcode-img">
+                      <img src="assets/images/qrcode.jpg" alt="">
+                    </div>
+                    <div class="info">
+                      <p>Huynh Dang Khoa</p>
+                      <p>RYAN96</p>
+                      <p>PGD Ngô Gia Tự</p>
+                    </div>
+                  </div>
+              </div>
+          `,
+        confirmButtonColor: "#5a3a21"
+      });
+    }
+
+    const qrcode = document.getElementById('qr-btn');
+    qrcode.addEventListener("click", toggleQR);
+  </script> -->
+</body>
+
+</html>

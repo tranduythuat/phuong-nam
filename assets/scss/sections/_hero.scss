@@ -1,0 +1,107 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .content {
+        aspect-ratio: 500 / 891;
+        // background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tram-thinh/hero_bg.webp') no-repeat center / cover;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        perspective: 1000px;
+        font-weight: 300;
+        z-index: 1;
+        color: #fff;
+
+        .divider {
+            margin: 2% 0;
+            max-width: 74px;
+            width: 100%;
+            aspect-ratio: 74 / 21;
+            background: url('../../assets/images/divider-top.png') no-repeat center / contain;
+
+            &.bot {
+                background: url('../../assets/images/divider1.png') no-repeat center / contain;
+            }
+        }
+
+        .welcome {
+            font-family: $font-gothamLight;
+            margin-bottom: 2%;
+        }
+
+        .couple-name {
+            font-size: 50px;
+            font-family: $font-PinyonScript;
+            font-weight: 300;
+        }
+
+        .photo-frame {
+            margin: 4% 0;
+            max-width: 237px;
+            // height: 340px;
+            aspect-ratio: 237 / 324;
+            width: 100%;
+            background: url('../../assets/images/elip.png') no-repeat center / 100%;
+            @include flex-center;
+
+            .img-box {
+                max-width: 195px;
+                width: 100%;
+                aspect-ratio: 192 / 277;
+                border-radius: 50%;
+                background: url('../../assets/images/couple/hero.jpg') no-repeat 57% 5%/145%
+            }
+        }
+
+        .forever {
+            font-size: 24px;
+            font-family: $font-PinyonScript;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url('../../assets/images/couple/hero_bg.jpg') no-repeat 50% 50% / 100%;
+        filter: blur(3px);
+        transform: scale(1.05);
+        /* tránh viền trắng khi blur */
+        z-index: 0;
+    }
+
+
+
+    @media (max-width: 500px) {
+        .content {
+            .divider {
+                max-width: calc((74 / 500) * 100vw);
+            }
+
+            .couple-name {
+                font-size: calc((50 / 500) * 100vw);
+            }
+
+            .photo-frame {
+                max-width: calc((237 / 500) * 100vw);
+
+                .img-box {
+                    max-width: calc((195 / 500) * 100vw);
+                }
+            }
+
+            .forever {
+                font-size: calc((24 / 500) * 100vw);
+            }
+        }
+
+
+    }
+}
