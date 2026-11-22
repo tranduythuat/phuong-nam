@@ -551,6 +551,7 @@ header {
   width: 100%;
   max-width: 150px;
   aspect-ratio: 5/7;
+  border-radius: 4px;
 }
 .greeting .content .signature .wife-name .photo {
   background: url("../../assets/images/couple/wife.jpg") no-repeat center/260%;
