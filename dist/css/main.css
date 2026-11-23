@@ -808,7 +808,7 @@ header {
 }
 .timeline-location .content .timeline-items {
   width: 98%;
-  margin: 10% 0 10%;
+  margin: 2% 0 10%;
 }
 .timeline-location .content .timeline-items .schedule-item.horizontal {
   display: flex;
