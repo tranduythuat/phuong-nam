@@ -1343,11 +1343,13 @@ header {
   border-color: #c8c8c8;
   color: #888;
 }
-.rsvp .form-group input[type=radio]:hover + .radio-button,
-.rsvp .form-group input[type=checkbox]:hover + .radio-button {
-  background-color: #5a3a21;
-  color: #ffffff;
-  transition: 0.3s ease;
+@media (hover: hover) and (pointer: fine) {
+  .rsvp .form-group input[type=radio]:hover + .radio-button,
+  .rsvp .form-group input[type=checkbox]:hover + .radio-button {
+    background-color: #5a3a21;
+    color: #ffffff;
+    transition: 0.3s ease;
+  }
 }
 .rsvp .form-group input[type=checkbox]:checked + .radio-button,
 .rsvp .form-group input[type=radio]:checked + .radio-button {

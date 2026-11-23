@@ -89,12 +89,16 @@
             color: #888;
         }
 
-        input[type="radio"]:hover+.radio-button,
-        input[type="checkbox"]:hover+.radio-button {
-            background-color: $secondary-color;
-            color: #ffffff;
-            transition: .3s ease;
+        @media (hover: hover) and (pointer: fine) {
+
+            input[type="radio"]:hover+.radio-button,
+            input[type="checkbox"]:hover+.radio-button {
+                background-color: $secondary-color;
+                color: #ffffff;
+                transition: .3s ease;
+            }
         }
+
 
         input[type="checkbox"]:checked+.radio-button,
         input[type="radio"]:checked+.radio-button {
