@@ -38,7 +38,7 @@
     }
 
     .photo {
-        max-width: 330px;
+        max-width: 310px;
         width: 100%;
         aspect-ratio: 301 / 180;
         margin: 4% 0;
@@ -54,9 +54,8 @@
     }
 
     .text {
-        text-align: justify;
-        text-align-last: center;
-        padding: 0 15%;
+        text-align: left;
+        padding: 0 11%;
 
         p {
             margin-bottom: 5%;
@@ -70,7 +69,7 @@
         }
 
         h2 {
-            font-size: calc((14.98px / 500px) * 100vw);
+            font-size: calc((32px / 500px) * 100vw);
         }
 
         h3 {
@@ -82,14 +81,12 @@
         }
 
         .photo {
-            max-width: calc((300px / 500px) * 100vw);
+            max-width: calc((310px / 500px) * 100vw);
         }
 
         .text {
             p {
-                // font-size: 2.25vw;
-                font-size: calc(($base-font-size / 500px) * 100vw);
-                ;
+                font-size: calc((12 / 500) * 100vw);
             }
         }
     }

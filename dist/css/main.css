@@ -532,6 +532,7 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  gap: 8%;
 }
 .greeting .content .signature .img-box img.logo-couple {
   width: 40px;
@@ -573,9 +574,6 @@ header {
   }
   .greeting .content h2 {
     font-size: 4vw;
-  }
-  .greeting .content p {
-    font-size: 2.2vw;
   }
   .greeting .content .signature .img-box img.logo-couple {
     width: 8vw;
@@ -793,7 +791,6 @@ header {
 .timeline-location .content {
   width: 100%;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/photo-bg.webp") no-repeat center/cover;
-  aspect-ratio: 500/686;
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -811,7 +808,7 @@ header {
 }
 .timeline-location .content .timeline-items {
   width: 98%;
-  margin: 10% 0 15%;
+  margin: 10% 0 10%;
 }
 .timeline-location .content .timeline-items .schedule-item.horizontal {
   display: flex;
@@ -884,14 +881,14 @@ header {
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date .day {
   font-family: "SVN-gothamBold", sans-serif;
-  font-size: 74px;
+  font-size: 22px;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date .month {
-  font-size: 22px;
-  line-height: 1;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date .year {
-  margin-top: 5%;
   font-size: 26px;
   font-family: "SVN-gothamBold", sans-serif;
 }
@@ -971,6 +968,34 @@ header {
   font-size: 13px;
   font-style: italic;
 }
+.timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+}
+.timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-icon img {
+  max-width: 50px;
+}
+.timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-info h3 {
+  font-family: "Lora", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 2% 0;
+}
+.timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-info p {
+  font-style: italic;
+}
 .timeline-location .content .timeline-items .schedule-item.timeline.date-01-07 {
   margin-bottom: 5%;
 }
@@ -1011,10 +1036,10 @@ header {
     font-size: 4vw;
   }
   .timeline-location .content .timeline-items .schedule-item.timeline .big-date .day {
-    font-size: 14.8vw;
+    font-size: 4.4vw;
   }
   .timeline-location .content .timeline-items .schedule-item.timeline .big-date .month {
-    font-size: 4.4vw;
+    font-size: 5.6vw;
   }
   .timeline-location .content .timeline-items .schedule-item.timeline .big-date .year {
     font-size: 5.2vw;
@@ -1033,6 +1058,12 @@ header {
   }
   .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content p {
     font-size: 2.6vw;
+  }
+  .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-icon img {
+    max-width: 10vw;
+  }
+  .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-info h3 {
+    font-size: 2.8vw;
   }
   .timeline-location .content .timeline-items .map-btn {
     font-size: 2.4vw;
@@ -1072,7 +1103,7 @@ header {
   font-size: 13px;
 }
 .our-story .photo {
-  max-width: 330px;
+  max-width: 310px;
   width: 100%;
   aspect-ratio: 301/180;
   margin: 4% 0;
@@ -1085,9 +1116,8 @@ header {
   object-fit: cover;
 }
 .our-story .text {
-  text-align: justify;
-  text-align-last: center;
-  padding: 0 15%;
+  text-align: left;
+  padding: 0 11%;
 }
 .our-story .text p {
   margin-bottom: 5%;
@@ -1098,7 +1128,7 @@ header {
     max-width: 8.4vw;
   }
   .our-story h2 {
-    font-size: 2.996vw;
+    font-size: 6.4vw;
   }
   .our-story h3 {
     font-size: 6.2vw;
@@ -1107,10 +1137,10 @@ header {
     font-size: 2.6vw;
   }
   .our-story .photo {
-    max-width: 60vw;
+    max-width: 62vw;
   }
   .our-story .text p {
-    font-size: 2.2vw;
+    font-size: 2.4vw;
   }
 }
 
@@ -1236,9 +1266,6 @@ header {
   color: #5a3a21;
 }
 @media (max-width: 500px) {
-  .photos h2 {
-    font-size: 3.936vw;
-  }
   .photos p {
     font-size: 2.2vw;
   }
