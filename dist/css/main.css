@@ -960,15 +960,15 @@ header {
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content {
   width: 70%;
   text-align: left;
-  padding-left: 10%;
-  padding-right: 5%;
+  padding-left: 7%;
+  padding-right: 3%;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content h3 {
   font-family: "SVN-gothamBold", sans-serif;
   font-size: 20px;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content p {
-  font-size: 12px;
+  font-size: 13px;
   font-style: italic;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline.date-01-07 {
@@ -1032,7 +1032,7 @@ header {
     font-size: 4vw;
   }
   .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content p {
-    font-size: 2.4vw;
+    font-size: 2.6vw;
   }
   .timeline-location .content .timeline-items .map-btn {
     font-size: 2.4vw;
