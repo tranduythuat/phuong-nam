@@ -884,7 +884,7 @@ header {
   font-size: 22px;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date .month {
-  font-size: 28px;
+  font-size: 44px;
   font-weight: 600;
   line-height: 1.3;
 }
@@ -1039,7 +1039,7 @@ header {
     font-size: 4.4vw;
   }
   .timeline-location .content .timeline-items .schedule-item.timeline .big-date .month {
-    font-size: 5.6vw;
+    font-size: 8.8vw;
   }
   .timeline-location .content .timeline-items .schedule-item.timeline .big-date .year {
     font-size: 5.2vw;
