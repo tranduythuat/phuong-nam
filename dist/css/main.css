@@ -522,11 +522,10 @@ header {
   padding-bottom: 6%;
 }
 .greeting .content p {
-  text-align: justify;
-  text-align-last: center;
+  text-align: left;
   padding-bottom: 4%;
   line-height: 180%;
-  margin: 0 15%;
+  margin: 0 14%;
 }
 .greeting .content .signature {
   display: flex;
@@ -873,7 +872,7 @@ header {
   margin-bottom: 10%;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date {
-  width: 27%;
+  width: 24%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -884,6 +883,7 @@ header {
   font-size: 22px;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date .month {
+  font-family: "SVN-gothamBold", sans-serif;
   font-size: 44px;
   font-weight: 600;
   line-height: 1.3;
@@ -893,7 +893,7 @@ header {
   font-family: "SVN-gothamBold", sans-serif;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline {
-  width: 73%;
+  width: 76%;
   position: relative;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .line {
@@ -970,12 +970,11 @@ header {
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first {
   display: flex;
-  justify-content: center;
-  gap: 4%;
+  gap: 3%;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-icon {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-icon img {
@@ -1401,7 +1400,7 @@ header {
   font-size: 11.2px;
   max-width: 311px;
   width: 100%;
-  aspect-ratio: 311/71;
+  aspect-ratio: 311/91;
   border-radius: 8px;
   border: 1px solid #5a3a21;
   background-color: transparent;
@@ -1409,7 +1408,6 @@ header {
   box-sizing: border-box;
   outline: none;
   resize: none;
-  margin-bottom: 8%;
 }
 .rsvp .form-group.name {
   margin-top: 24%;
@@ -1438,7 +1436,7 @@ header {
   font-size: 16.66px;
   font-weight: 300;
   color: #5a3a21;
-  margin-top: 16%;
+  margin-top: 7%;
   margin-bottom: 5%;
 }
 .rsvp .wish-box p {
