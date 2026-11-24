@@ -661,12 +661,12 @@
 
     const t = messages[lang] || messages.vi;
 
-    if (confirm === "Sẽ tham dự" && !formData.getAll("party").length) {
+    if (confirm === "Có" && !formData.getAll("party").length) {
       Swal.fire({
         title: lang === "en" ? "Choose a party" : "Vui lòng chọn tiệc",
         text: lang === "en"
           ? "Select at least one party: groom's family or bride's family."
-          : "Vui lòng chọn ít nhất Tiệc nhà trai hoặc Tiệc nhà gái.",
+          : "Vui lòng chọn ít nhất Lễ Vu Quy hoặc Lễ Thành Hôn.",
         icon: "warning",
         confirmButtonText: "OK",
         confirmButtonColor: "#806331ff",
@@ -750,7 +750,7 @@
       const attendanceChoices = form.querySelectorAll('input[name="confirm"]');
 
       const updatePartyOptions = () => {
-        const isAttending = form.querySelector('input[name="confirm"]:checked')?.value === "Sẽ tham dự";
+        const isAttending = form.querySelector('input[name="confirm"]:checked')?.value === "Có";
         partyOptions.querySelectorAll('input[name="party"]').forEach((checkbox) => {
           checkbox.disabled = !isAttending;
           if (!isAttending) checkbox.checked = false;

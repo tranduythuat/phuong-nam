@@ -37,14 +37,15 @@
         font-size: 18px;
         font-weight: 300;
         color: $secondary-color;
-        margin-top: 5%;
+        margin-top: 0%;
     }
 
     p.subtext {
         text-align: justify;
         text-align-last: center;
         line-height: 180%;
-        margin: 5% 0;
+        margin: 3% 0;
+        font-size: 11px;
     }
 
     #rsvp-form {
@@ -62,12 +63,13 @@
 
         .radio-button {
             @include flex-center;
-            font-size: .8em;
+            font-size: 10px;
             padding: 1% 0;
             width: 138px;
             border-radius: 6px;
             border: 1px solid $secondary-color;
             cursor: pointer;
+            text-transform: uppercase;
         }
 
         &.party-options.is-disabled .radio-button {
@@ -142,13 +144,22 @@
     .form-group.options-group {
         display: flex;
         justify-content: space-between;
-        margin-top: 19%;
+        margin-top: 6%;
+
+        .radio-button {
+            width: auto;
+            padding: 1% 5%;
+        }
     }
 
     .form-group.party-options {
         display: flex;
         justify-content: space-between;
         margin-top: 2%;
+
+        .radio-button {
+            padding: 2%;
+        }
     }
 
     .wish-box {
@@ -206,13 +217,14 @@
 
 
         p.subtext {
-            font-size: calc(($base-font-size / 500px) * 100vw);
+            font-size: calc((11 / 500) * 100vw);
         }
 
         .form-group {
             .radio-button {
-                font-size: 1.8vw;
-                width: 27.5vw;
+                font-size: calc((10/ 500) * 100vw);
+                width: calc((138/ 500) * 100vw);
+                ;
             }
 
             input.input-text,

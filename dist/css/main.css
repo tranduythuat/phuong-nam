@@ -1324,13 +1324,14 @@ header {
   font-size: 18px;
   font-weight: 300;
   color: #5a3a21;
-  margin-top: 5%;
+  margin-top: 0%;
 }
 .rsvp p.subtext {
   text-align: justify;
   text-align-last: center;
   line-height: 180%;
-  margin: 5% 0;
+  margin: 3% 0;
+  font-size: 11px;
 }
 .rsvp #rsvp-form {
   width: 100%;
@@ -1347,12 +1348,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8em;
+  font-size: 10px;
   padding: 1% 0;
   width: 138px;
   border-radius: 6px;
   border: 1px solid #5a3a21;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .rsvp .form-group.party-options.is-disabled .radio-button {
   background-color: #e5e5e5;
@@ -1412,12 +1414,19 @@ header {
 .rsvp .form-group.options-group {
   display: flex;
   justify-content: space-between;
-  margin-top: 19%;
+  margin-top: 6%;
+}
+.rsvp .form-group.options-group .radio-button {
+  width: auto;
+  padding: 1% 5%;
 }
 .rsvp .form-group.party-options {
   display: flex;
   justify-content: space-between;
   margin-top: 2%;
+}
+.rsvp .form-group.party-options .radio-button {
+  padding: 2%;
 }
 .rsvp .wish-box {
   text-align: center;
@@ -1467,8 +1476,8 @@ header {
     font-size: 2.2vw;
   }
   .rsvp .form-group .radio-button {
-    font-size: 1.8vw;
-    width: 27.5vw;
+    font-size: 2vw;
+    width: 27.6vw;
   }
   .rsvp .form-group input.input-text,
   .rsvp .form-group textarea.input-text {
