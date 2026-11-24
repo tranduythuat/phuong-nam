@@ -116,36 +116,61 @@
     const btn = qs("#player-btn");
     const label = qs("#musicLabel");
 
-    let isOpen = true
+    if (!audio || !icon || !btn || !label) return;
 
-    if (!audio || !icon || !btn) return;
-    // if (!audio || !icon || !btn || !label) return;
+    let isOpen = audio.paused;
 
-    // 👉 GSAP timeline cho label
-    const tl = gsap.timeline({ paused: true });
+    const syncLabel = () => {
+      if (isOpen) {
+        gsap.to(label, {
+          x: 0,
+          duration: 0.8,
+          ease: "power2.inOut",
+          pointerEvents: "auto",
+        });
+        return;
+      }
 
-    tl.to(label, {
-      x: 200,
-      // opacity: 0,
-      duration: 1,
-      ease: "power2.inOut",
-      pointerEvents: "none"
-    });
+      gsap.to(label, {
+        x: 200,
+        duration: 0.8,
+        ease: "power2.inOut",
+        pointerEvents: "none",
+      });
+    };
 
     btn.addEventListener("click", () => {
       if (!audio.src) return;
-      audio.paused ? audio.play() : audio.pause();
-      // toggle label
-      if (isOpen) {
-        tl.play();
+
+      if (audio.paused) {
+        audio.play().catch((err) => {
+          console.log("Autoplay blocked:", err);
+        });
       } else {
-        tl.reverse();
+        audio.pause();
       }
-      isOpen = !isOpen;
     });
 
-    audio.addEventListener("play", () => icon.classList.add("spin"));
-    audio.addEventListener("pause", () => icon.classList.remove("spin"));
+    audio.addEventListener("play", () => {
+      icon.classList.add("spin");
+      isOpen = false;
+      syncLabel();
+    });
+
+    audio.addEventListener("pause", () => {
+      icon.classList.remove("spin");
+      isOpen = true;
+      syncLabel();
+    });
+
+    if (!audio.paused) {
+      icon.classList.add("spin");
+      isOpen = false;
+      syncLabel();
+    } else {
+      isOpen = true;
+      syncLabel();
+    }
   }
 
   /* ======================================================
