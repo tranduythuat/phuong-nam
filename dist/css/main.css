@@ -1,46 +1,54 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: "SVN-GothamLight";
   src: url("../../assets/fonts/SVN-GothamLight.woff2") format("woff2"), url("../../assets/fonts/SVN-GothamLight.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SVN-GothamBook";
   src: url("../../assets/fonts/SVN-GothamBook.woff2") format("woff2"), url("../../assets/fonts/SVN-GothamBook.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SVN-GothamBold";
   src: url("../../assets/fonts/SVN-GothamBold.woff2") format("woff2"), url("../../assets/fonts/SVN-GothamBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "1FTV-VIP-Bengoda";
   src: url("../../assets/fonts/1FTV-VIP-Bengoda.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "LORA-ITALIC-VARIABLEFONT_WGHT";
   src: url("../../assets/fonts/LORA-ITALIC-VARIABLEFONT_WGHT.TTF") format("TTF");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Lora";
   src: url("../../assets/fonts/LORA-VARIABLEFONT_WGHT (2).TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "PinyonScript";
   src: url("../../assets/fonts/PinyonScript-Regular.woff2") format("woff2"), url("../../assets/fonts/PinyonScript-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 *,
 *::after,
 *::before {
@@ -186,20 +194,20 @@ section {
   color: #806d34;
 }
 
-.navbar-container input[type=checkbox]:checked ~ .menu-items {
+.navbar-container input[type=checkbox]:checked~.menu-items {
   transform: translateX(0);
   opacity: 1;
 }
 
-.navbar-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
+.navbar-container input[type=checkbox]:checked~.hamburger-lines .line1 {
   transform: rotate(42deg);
 }
 
-.navbar-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
+.navbar-container input[type=checkbox]:checked~.hamburger-lines .line2 {
   transform: scaleY(0);
 }
 
-.navbar-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
+.navbar-container input[type=checkbox]:checked~.hamburger-lines .line3 {
   transform: rotate(-42deg);
 }
 
@@ -212,6 +220,7 @@ section {
   cursor: pointer;
   z-index: 100001;
 }
+
 .music-box .label {
   display: flex;
   justify-content: center;
@@ -225,6 +234,7 @@ section {
   height: 100%;
   overflow: hidden;
 }
+
 .music-box .label .musicLabel {
   width: 100%;
   text-align: left;
@@ -237,6 +247,7 @@ section {
   border: 1px solid rgba(48, 44, 42, 0.124);
   opacity: 0.9;
 }
+
 .music-box .player {
   max-width: 55px;
   width: 105%;
@@ -260,36 +271,45 @@ section {
   body {
     font-size: 2.4vw;
   }
+
   .navbar-container input[type=checkbox] {
     top: 1.6%;
     right: 2.2%;
     max-width: 6vw;
   }
+
   .navbar-container .hamburger-lines {
     top: 1.6%;
     right: 2.2%;
     width: 6vw;
   }
+
   .navbar .menu-items li {
     padding: 5% 6%;
     font-size: 2.9vw;
   }
+
   .music-box {
     bottom: 2vw;
   }
+
   .music-box .label {
     max-width: 60vw;
   }
+
   .music-box .label .musicLabel {
     font-size: 2.4vw;
   }
+
   .music-box .player {
     max-width: 11vw;
   }
+
   .title {
     font-size: 6.4vw;
   }
 }
+
 .spin {
   animation: spin 4s linear infinite;
 }
@@ -299,10 +319,12 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 header {
   display: flex;
   justify-content: center;
@@ -319,6 +341,7 @@ header {
   align-items: center;
   margin: 100px 0;
 }
+
 .image-wrapper img {
   width: 320px;
   border-radius: 16px;
@@ -362,10 +385,11 @@ header {
   width: 100%;
   max-width: 500px;
 }
+
 .letter-section .content {
   width: 100%;
   aspect-ratio: 500/891;
-  background: url("../../assets/images/couple/letter.jpg");
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/phuong-nam/couple/letter.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,6 +404,7 @@ header {
   perspective: 1000px;
   padding-bottom: 15%;
 }
+
 @media (max-width: 500px) {
   .letter-section .content .subtext {
     font-size: 4.2vw;
@@ -393,6 +418,7 @@ header {
   perspective: 1000px;
   background-color: #5a3a21;
 }
+
 .cover img {
   width: 100%;
   height: 100%;
@@ -404,6 +430,7 @@ header {
   position: relative;
   overflow: hidden;
 }
+
 .hero .content {
   aspect-ratio: 500/891;
   width: 100%;
@@ -416,6 +443,7 @@ header {
   z-index: 1;
   color: #fff;
 }
+
 .hero .content .divider {
   margin: 2% 0;
   max-width: 74px;
@@ -423,18 +451,22 @@ header {
   aspect-ratio: 74/21;
   background: url("../../assets/images/divider-top.png") no-repeat center/contain;
 }
+
 .hero .content .divider.bot {
   background: url("../../assets/images/divider1.png") no-repeat center/contain;
 }
+
 .hero .content .welcome {
   font-family: "SVN-GothamLight", sans-serif;
   margin-bottom: 2%;
 }
+
 .hero .content .couple-name {
   font-size: 50px;
   font-family: "PinyonScript", sans-serif;
   font-weight: 300;
 }
+
 .hero .content .photo-frame {
   margin: 4% 0;
   max-width: 237px;
@@ -445,40 +477,48 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .hero .content .photo-frame .img-box {
   max-width: 195px;
   width: 100%;
   aspect-ratio: 192/277;
   border-radius: 50%;
-  background: url("../../assets/images/couple/hero.jpg") no-repeat 57% 5%/145%;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/phuong-nam/couple/hero.jpg") no-repeat 57% 5%/145%;
 }
+
 .hero .content .forever {
   font-size: 24px;
   font-family: "PinyonScript", sans-serif;
 }
+
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../../assets/images/couple/hero_bg.jpg") no-repeat 50% 50%/100%;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/phuong-nam/couple/hero_bg.jpg") no-repeat 50% 50%/100%;
   filter: blur(3px);
   transform: scale(1.05);
   /* tránh viền trắng khi blur */
   z-index: 0;
 }
+
 @media (max-width: 500px) {
   .hero .content .divider {
     max-width: 14.8vw;
   }
+
   .hero .content .couple-name {
     font-size: 10vw;
   }
+
   .hero .content .photo-frame {
     max-width: 47.4vw;
   }
+
   .hero .content .photo-frame .img-box {
     max-width: 39vw;
   }
+
   .hero .content .forever {
     font-size: 4.8vw;
   }
@@ -491,11 +531,12 @@ header {
   position: relative;
   overflow: hidden;
 }
+
 .greeting::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/images/couple/hero_bg.jpg");
+  background-image: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/phuong-nam/couple/hero_bg.jpg");
   background-size: 100%;
   background-position: left center;
   filter: blur(5px);
@@ -503,6 +544,7 @@ header {
   /* tránh viền trắng khi blur */
   z-index: 0;
 }
+
 .greeting .content {
   width: 100%;
   max-width: 364px;
@@ -515,28 +557,33 @@ header {
   justify-content: center;
   flex-direction: column;
 }
+
 .greeting .content h2 {
   font-size: 20px;
   font-weight: 300;
   color: #5a3a21;
   padding-bottom: 6%;
 }
+
 .greeting .content p {
   text-align: left;
   padding-bottom: 4%;
   line-height: 180%;
   margin: 0 14%;
 }
+
 .greeting .content .signature {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 8%;
 }
+
 .greeting .content .signature .img-box img.logo-couple {
   width: 40px;
   height: auto;
 }
+
 .greeting .content .signature .wife-name,
 .greeting .content .signature .husband-name {
   width: 32%;
@@ -545,6 +592,7 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
 .greeting .content .signature .wife-name .photo,
 .greeting .content .signature .husband-name .photo {
   margin-top: 12%;
@@ -553,12 +601,15 @@ header {
   aspect-ratio: 5/7;
   border-radius: 4px;
 }
+
 .greeting .content .signature .wife-name .photo {
-  background: url("../../assets/images/couple/wife.jpg") no-repeat center/260%;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/phuong-nam/couple/wife.jpg") no-repeat center/260%;
 }
+
 .greeting .content .signature .husband-name .photo {
-  background: url("../../assets/images/couple/husband.jpg") no-repeat center/100%;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/phuong-nam/couple/husband.jpg") no-repeat center/100%;
 }
+
 .greeting .content .signature p {
   display: block;
   font-size: 20px;
@@ -567,16 +618,20 @@ header {
   color: #5a3a21;
   padding: 0;
 }
+
 @media (max-width: 500px) {
   .greeting .content {
     max-width: 72.8vw;
   }
+
   .greeting .content h2 {
     font-size: 4vw;
   }
+
   .greeting .content .signature .img-box img.logo-couple {
     width: 8vw;
   }
+
   .greeting .content .signature p {
     font-size: 4vw;
   }
@@ -588,12 +643,14 @@ header {
   width: 100%;
   aspect-ratio: 500/890;
 }
+
 .couple h2 {
   font-size: 18px;
   font-weight: 300;
   color: #5a3a21;
   padding-bottom: 6%;
 }
+
 .couple .couple-photo {
   max-width: 185px;
   aspect-ratio: 200/293;
@@ -601,6 +658,7 @@ header {
   box-shadow: 1px 1px 4px 2px rgb(140, 140, 140);
   position: relative;
 }
+
 .couple .couple-photo .frame {
   border-top: 10px solid #eeede8;
   border-right: 10px solid #eeede8;
@@ -610,6 +668,7 @@ header {
   height: 100%;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/PhuongChi-TheLam/couple/couple_frame.webp") no-repeat 53% 52%/228%;
 }
+
 .couple .couple-photo .tape {
   position: absolute;
   max-width: 110px;
@@ -618,9 +677,11 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .couple .save-the-date {
   margin: 10% 0;
 }
+
 .couple .save-the-date p {
   font-family: "1FTV-VIP-Bengoda", sans-serif;
   color: #2c2722;
@@ -628,25 +689,32 @@ header {
   transform: rotate(-5deg);
   font-size: 40px;
 }
+
 .couple .subtext {
   padding: 0 10%;
 }
+
 .couple .subtext p {
   line-height: 180%;
 }
+
 .couple .date-time {
   color: #5a3a21;
   padding: 8% 0;
 }
+
 .couple .date-time .label {
   font-size: 14px;
 }
+
 .couple .date-time .date {
   font-size: 37px;
 }
+
 .couple .date-time .time {
   font-size: 24px;
 }
+
 .couple .countdown {
   display: flex;
   justify-content: center;
@@ -657,43 +725,55 @@ header {
   padding-bottom: 2%;
   width: 70%;
 }
+
 .couple .countdown .item {
   width: 100%;
   padding: 0 5%;
 }
+
 .couple .countdown .item p.value {
   font-size: 39px;
 }
+
 .couple .countdown .item p.title {
   font-size: 8.4px;
   text-transform: uppercase;
 }
+
 .couple.vows {
   aspect-ratio: 500/375;
   background: url("../../assets/images/savethedate_bottom_bg.webp") no-repeat 0% 100%/contain, url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/base-our-story-bg.webp") no-repeat bottom/cover;
 }
+
 @media (max-width: 500px) {
   .couple h2 {
     font-size: 3.6vw;
   }
+
   .couple .couple-photo {
     max-width: 40vw;
   }
+
   .couple .save-the-date p {
     font-size: 8vw;
   }
+
   .couple .date-time .label {
     font-size: 2.8vw;
   }
+
   .couple .date-time .date {
     font-size: 7.5vw;
   }
+
   .couple .date-time .time {
     font-size: 4.8vw;
   }
+
   .couple .countdown .item p.value {
     font-size: 7.8vw;
   }
+
   .couple .countdown .item p.title {
     font-size: 1.8vw;
   }
@@ -707,6 +787,7 @@ header {
   position: relative;
   overflow: hidden;
 }
+
 .location::before {
   content: "";
   position: absolute;
@@ -719,6 +800,7 @@ header {
   /* tránh viền trắng khi blur */
   z-index: 0;
 }
+
 .location .frame {
   max-width: 363px;
   width: 100%;
@@ -728,29 +810,35 @@ header {
   margin-top: 14%;
   margin-bottom: 6%;
 }
+
 .location .frame .label {
   margin-top: 8%;
   font-size: 20px;
   color: #5a3a21;
 }
+
 .location .frame .location-name {
   margin-top: 11%;
   font-size: 22px;
   font-weight: 300;
   color: #5a3a21;
 }
+
 .location .frame .address {
   font-size: 11px;
   margin-bottom: 3%;
 }
+
 .location .frame .map {
   margin: 2% 0 4%;
 }
+
 .location .frame .map img {
   max-width: 250px;
   width: 100%;
   height: auto;
 }
+
 .location .frame .btn-map {
   display: inline-block;
   text-decoration: none;
@@ -760,25 +848,32 @@ header {
   border-radius: 5px;
   margin-bottom: 8%;
 }
+
 @media (max-width: 500px) {
   .location .frame {
     max-width: 72.6vw;
   }
+
   .location .frame .label {
     font-size: 4vw;
   }
+
   .location .frame .location-name {
     font-size: 4.4vw;
   }
+
   .location .frame .address {
     font-size: 2.2vw;
   }
+
   .location .frame .map {
     min-height: 43.6vw;
   }
+
   .location .frame .map img {
     max-width: 50vw;
   }
+
   .location .frame .btn-map {
     font-size: 2.2vw;
   }
@@ -787,6 +882,7 @@ header {
 .timeline-location {
   width: 100%;
 }
+
 .timeline-location .content {
   width: 100%;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/photo-bg.webp") no-repeat center/cover;
@@ -798,6 +894,7 @@ header {
   position: relative;
   font-family: "Lora", sans-serif;
 }
+
 .timeline-location .content .title {
   font-family: "Lora", sans-serif;
   font-size: 38px;
@@ -805,34 +902,41 @@ header {
   margin-top: 12%;
   color: #5a3a21;
 }
+
 .timeline-location .content .timeline-items {
   width: 98%;
   margin: 2% 0 10%;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal {
   display: flex;
   justify-content: center;
   margin-bottom: 9%;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-date .date-number {
   font-family: "Lora", sans-serif;
   font-size: 24px;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-date .date-desc {
   font-size: 12px;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-divider {
   width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-divider span {
   margin-top: 10%;
   display: inline-block;
   width: 80%;
   border-top: 1px dashed black;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content {
   display: flex;
   justify-content: center;
@@ -840,20 +944,24 @@ header {
   gap: 2%;
   width: 65%;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content .event-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content .event-icon img {
   max-width: 50px;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content .event-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content .event-info h3 {
   font-family: "Lora", sans-serif;
   font-size: 20px;
@@ -861,16 +969,20 @@ header {
   text-align: center;
   margin: 2% 0;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content .event-info p {
   font-style: italic;
 }
+
 .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content .event-info a {
   margin: 0 auto;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline {
   display: flex;
   margin-bottom: 10%;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date {
   width: 24%;
   display: flex;
@@ -878,24 +990,29 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date .day {
   font-family: "SVN-gothamBold", sans-serif;
   font-size: 22px;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date .month {
   font-family: "SVN-gothamBold", sans-serif;
   font-size: 44px;
   font-weight: 600;
   line-height: 1.3;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .big-date .year {
   font-size: 26px;
   font-family: "SVN-gothamBold", sans-serif;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline {
   width: 76%;
   position: relative;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .line {
   display: inline-block;
   position: absolute;
@@ -905,6 +1022,7 @@ header {
   border-bottom: 1px dashed black;
   transform: rotate(90deg);
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .line::after {
   content: "";
   display: block;
@@ -917,6 +1035,7 @@ header {
   border-radius: 50%;
   background-color: black;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .line::before {
   content: "";
   display: block;
@@ -929,17 +1048,20 @@ header {
   border-radius: 50%;
   background-color: black;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .line.line2 {
   top: 49%;
   width: 30%;
   left: 15%;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row {
   display: flex;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-time {
   width: 25%;
   display: flex;
@@ -947,57 +1069,70 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-time .time {
   font-family: "SVN-gothamBold", sans-serif;
   font-size: 18px;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-time .label {
   font-size: 12px;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content {
   width: 70%;
   text-align: left;
   padding-left: 7%;
   padding-right: 3%;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content h3 {
   font-family: "SVN-gothamBold", sans-serif;
   font-size: 20px;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content p {
   font-size: 13px;
   font-style: italic;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first {
   display: flex;
   gap: 3%;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-icon {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-icon img {
   max-width: 50px;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-info h3 {
   font-family: "Lora", sans-serif;
   font-size: 14px;
   line-height: 1.3;
   margin: 2% 0;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-info p {
   font-style: italic;
 }
+
 .timeline-location .content .timeline-items .schedule-item.timeline.date-01-07 {
   margin-bottom: 5%;
 }
+
 .timeline-location .content .timeline-items .map-btn {
   display: block;
   font-size: 12px;
@@ -1015,55 +1150,73 @@ header {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+
 .timeline-location .content .timeline-items .map-btn:hover {
   opacity: 0.8;
 }
+
 @media (max-width: 500px) {
   .timeline-location .content .title {
     font-size: 7.6vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-date .date-number {
     font-size: 4.8vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-date .date-desc {
     font-size: 2.4vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content .event-icon img {
     max-width: 10vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.horizontal .schedule-content .event-info h3 {
     font-size: 4vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.timeline .big-date .day {
     font-size: 4.4vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.timeline .big-date .month {
     font-size: 8.8vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.timeline .big-date .year {
     font-size: 5.2vw;
   }
-  .timeline-location .content .timeline-items .schedule-item.timeline .timeline .line::after, .timeline-location .content .timeline-items .schedule-item.timeline .timeline .line::before {
+
+  .timeline-location .content .timeline-items .schedule-item.timeline .timeline .line::after,
+  .timeline-location .content .timeline-items .schedule-item.timeline .timeline .line::before {
     width: 2vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-time .time {
     font-size: 3.6vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-time .label {
     font-size: 2.4vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content h3 {
     font-size: 4vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content p {
     font-size: 2.6vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-icon img {
     max-width: 10vw;
   }
+
   .timeline-location .content .timeline-items .schedule-item.timeline .timeline .timeline-row .timeline-content.event-first .event-info h3 {
     font-size: 2.8vw;
   }
+
   .timeline-location .content .timeline-items .map-btn {
     font-size: 2.4vw;
     max-width: 19.2vw;
@@ -1077,30 +1230,36 @@ header {
   width: 100%;
   aspect-ratio: 500/890;
 }
+
 .our-story .logo {
   max-width: 42px;
   width: 100%;
   margin-bottom: 4%;
 }
+
 .our-story .logo img {
   width: 100%;
   height: auto;
 }
+
 .our-story h2 {
   font-size: 32px;
   color: #5a3a21;
   font-weight: 300;
   margin-bottom: 3%;
 }
+
 .our-story h3 {
   font-size: 31px;
   color: #5a3a21;
   font-weight: 300;
 }
+
 .our-story p.subtext {
   color: #5a3a21;
   font-size: 13px;
 }
+
 .our-story .photo {
   max-width: 310px;
   width: 100%;
@@ -1108,36 +1267,45 @@ header {
   margin: 4% 0;
   perspective: 1000px;
 }
+
 .our-story .photo img {
   width: 100%;
   height: 100%;
   object-position: 100% 49%;
   object-fit: cover;
 }
+
 .our-story .text {
   text-align: left;
   padding: 0 11%;
 }
+
 .our-story .text p {
   margin-bottom: 5%;
   line-height: 180%;
 }
+
 @media (max-width: 500px) {
   .our-story .logo {
     max-width: 8.4vw;
   }
+
   .our-story h2 {
     font-size: 6.4vw;
   }
+
   .our-story h3 {
     font-size: 6.2vw;
   }
+
   .our-story p.subtext {
     font-size: 2.6vw;
   }
+
   .our-story .photo {
     max-width: 62vw;
   }
+
   .our-story .text p {
     font-size: 2.4vw;
   }
@@ -1149,11 +1317,13 @@ header {
   width: 100%;
   padding: 15% 0;
 }
+
 .photos h2 {
   font-weight: 300;
   color: #5a3a21;
   margin-bottom: 5%;
 }
+
 .photos p {
   padding: 0 10%;
   text-align: justify;
@@ -1161,55 +1331,66 @@ header {
   margin-bottom: 10%;
   line-height: 180%;
 }
+
 .photos .photo-grid {
   width: 100%;
   padding: 0 7%;
 }
+
 .photos .photo-grid .row {
   display: flex;
   max-width: 432px;
   width: 100%;
   aspect-ratio: 432/144;
 }
+
 .photos .photo-grid .row .column {
   margin: 1.1%;
   perspective: 1000px;
 }
+
 .photos .photo-grid .row .column:first-child {
   aspect-ratio: 246/132;
   width: 100%;
   max-width: 246px;
 }
+
 .photos .photo-grid .row .column:first-child .img-box {
   overflow: hidden;
   background-color: #5a3a21;
   width: 100%;
   height: 100%;
 }
+
 .photos .photo-grid .row .column:first-child .img-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .photos .photo-grid .row .column:last-child {
   width: 100%;
   aspect-ratio: 164/134;
   max-width: 164px;
 }
+
 .photos .photo-grid .row .column:last-child .img-box {
   background-color: #5a3a21;
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
+
 .photos .photo-grid .row .column:last-child .img-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .photos .photo-grid div:nth-child(even) {
   flex-direction: row-reverse;
 }
+
 .photos .photo-preview {
   position: fixed;
   inset: 0;
@@ -1222,24 +1403,29 @@ header {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
 .photos .photo-preview.is-open {
   opacity: 1;
   visibility: visible;
 }
+
 .photos .preview-swiper {
   width: 100%;
   height: 100%;
 }
+
 .photos .preview-swiper .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .photos .preview-swiper img {
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
 }
+
 .photos .preview-close {
   position: absolute;
   top: 20px;
@@ -1251,6 +1437,7 @@ header {
   font-size: 40px;
   cursor: pointer;
 }
+
 .photos .preview-counter {
   position: absolute;
   bottom: 25px;
@@ -1260,31 +1447,39 @@ header {
   color: white;
   font-size: 14px;
 }
+
 .photos .swiper-button-prev,
 .photos .swiper-button-next {
   color: #5a3a21;
 }
+
 @media (max-width: 500px) {
   .photos p {
     font-size: 2.2vw;
   }
+
   .photos .photo-grid .row {
     max-width: 86.4vw;
   }
+
   .photos .photo-grid .row .column:first-child {
     max-width: 49.2vw;
   }
+
   .photos .photo-grid .row .column:last-child {
     max-width: 32.8vw;
   }
+
   .photos .swiper-button-prev,
   .photos .swiper-button-next {
     width: 4.8vw;
   }
+
   .photos .swiper-button-next,
   .photos .swiper-rtl .swiper-button-prev {
     right: 6%;
   }
+
   .photos .swiper-button-prev,
   .photos .swiper-rtl .swiper-button-next {
     left: 6%;
@@ -1298,11 +1493,12 @@ header {
   position: relative;
   overflow: hidden;
 }
+
 .rsvp::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/images/couple/hero_bg.jpg");
+  background-image: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/phuong-nam/couple/hero_bg.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(6px);
@@ -1310,6 +1506,7 @@ header {
   /* tránh viền trắng khi blur */
   z-index: 0;
 }
+
 .rsvp .content {
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/rsvp_paper.png") no-repeat center/cover;
   max-width: 368px;
@@ -1319,12 +1516,14 @@ header {
   z-index: 1;
   padding: 4% 7%;
 }
+
 .rsvp h2.title {
   font-size: 20px;
   font-weight: 300;
   color: #5a3a21;
   margin-top: 0%;
 }
+
 .rsvp p.subtext {
   text-align: justify;
   text-align-last: center;
@@ -1332,17 +1531,21 @@ header {
   margin: 3% 0;
   font-size: 11px;
 }
+
 .rsvp #rsvp-form {
   width: 100%;
 }
+
 .rsvp .form-group {
   width: 100%;
   margin-bottom: 6%;
 }
+
 .rsvp .form-group input[type=radio],
 .rsvp .form-group input[type=checkbox] {
   display: none;
 }
+
 .rsvp .form-group .radio-button {
   display: flex;
   justify-content: center;
@@ -1355,36 +1558,43 @@ header {
   cursor: pointer;
   text-transform: uppercase;
 }
+
 .rsvp .form-group.party-options.is-disabled .radio-button {
   background-color: #e5e5e5;
   border-color: #c8c8c8;
   color: #888;
   cursor: not-allowed;
 }
+
 .rsvp .form-group.party-options.is-disabled .radio-button:hover {
   background-color: #e5e5e5;
   border-color: #c8c8c8;
   color: #888;
 }
-.rsvp .form-group.party-options.is-disabled input[type=checkbox]:checked + .radio-button {
+
+.rsvp .form-group.party-options.is-disabled input[type=checkbox]:checked+.radio-button {
   background-color: #e5e5e5;
   border-color: #c8c8c8;
   color: #888;
 }
+
 @media (hover: hover) and (pointer: fine) {
-  .rsvp .form-group input[type=radio]:hover + .radio-button,
-  .rsvp .form-group input[type=checkbox]:hover + .radio-button {
+
+  .rsvp .form-group input[type=radio]:hover+.radio-button,
+  .rsvp .form-group input[type=checkbox]:hover+.radio-button {
     background-color: #5a3a21;
     color: #ffffff;
     transition: 0.3s ease;
   }
 }
-.rsvp .form-group input[type=checkbox]:checked + .radio-button,
-.rsvp .form-group input[type=radio]:checked + .radio-button {
+
+.rsvp .form-group input[type=checkbox]:checked+.radio-button,
+.rsvp .form-group input[type=radio]:checked+.radio-button {
   background-color: #5a3a21;
   color: #ffffff;
   border-color: #5a3a21;
 }
+
 .rsvp .form-group input.input-text {
   width: 100%;
   padding: 3% 3%;
@@ -1396,6 +1606,7 @@ header {
   background-color: transparent;
   font-size: 12px;
 }
+
 .rsvp .form-group textarea.input-text {
   font-size: 11.2px;
   max-width: 311px;
@@ -1409,29 +1620,36 @@ header {
   outline: none;
   resize: none;
 }
+
 .rsvp .form-group.name {
   margin-top: 24%;
 }
+
 .rsvp .form-group.options-group {
   display: flex;
   justify-content: space-between;
   margin-top: 17%;
 }
+
 .rsvp .form-group.options-group .radio-button {
   width: auto;
   padding: 1% 5%;
 }
+
 .rsvp .form-group.party-options {
   display: flex;
   justify-content: space-between;
   margin-top: 2%;
 }
+
 .rsvp .form-group.party-options .radio-button {
   padding: 2%;
 }
+
 .rsvp .wish-box {
   text-align: center;
 }
+
 .rsvp .wish-box h2 {
   font-size: 16.66px;
   font-weight: 300;
@@ -1439,16 +1657,19 @@ header {
   margin-top: 7%;
   margin-bottom: 5%;
 }
+
 .rsvp .wish-box p {
   text-align: justify;
   text-align-last: center;
   line-height: 180%;
   margin-bottom: 5%;
 }
+
 .rsvp .form-actions {
   display: flex;
   justify-content: center;
 }
+
 .rsvp .form-actions button.btn {
   background-color: #5a3a21;
   font-family: "Lora", sans-serif;
@@ -1462,34 +1683,43 @@ header {
   font-size: 11px;
   cursor: pointer;
 }
+
 .rsvp .form-actions button.btn:hover {
   color: #fff;
   background-color: #2c2722;
 }
+
 @media (max-width: 500px) {
   .rsvp .content {
     max-width: 73.6vw;
   }
+
   .rsvp h2.title {
     font-size: 4vw;
   }
+
   .rsvp p.subtext {
     font-size: 2.2vw;
   }
+
   .rsvp .form-group .radio-button {
     font-size: 2vw;
     width: 27.6vw;
   }
+
   .rsvp .form-group input.input-text,
   .rsvp .form-group textarea.input-text {
     font-size: 2.4vw;
   }
+
   .rsvp .wish-box h2 {
     font-size: 3.332vw;
   }
+
   .rsvp .wish-box p {
     font-size: 2.2vw;
   }
+
   .rsvp .form-actions button.btn {
     font-size: 2.2vw;
   }
@@ -1498,6 +1728,7 @@ header {
 .qrcode {
   width: 100%;
 }
+
 .qrcode .content {
   display: flex;
   justify-content: center;
@@ -1507,19 +1738,23 @@ header {
   width: 100%;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/photo-bg.webp") repeat center/contain;
 }
+
 .qrcode .content .wax-box img {
   max-width: 100px;
   width: 100%;
   height: auto;
 }
+
 .qrcode .content .subtext {
   font-size: 14px;
   margin: 3% 0;
 }
+
 @media (max-width: 500px) {
   .qrcode .content .wax-box img {
     max-width: 20vw;
   }
+
   .qrcode .content .subtext {
     font-size: 2.8vw;
   }
@@ -1542,12 +1777,14 @@ div:where(.swal2-container) div:where(.swal2-actions) {
   display: flex;
   flex-direction: row-reverse;
 }
+
 .qrcode-box .item {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .qrcode-box .item .info {
   margin: 3% 0;
   line-height: 1.5;
@@ -1555,11 +1792,13 @@ div:where(.swal2-container) div:where(.swal2-actions) {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .qrcode-box .item .qrcode-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .qrcode-box .item .qrcode-img img {
   max-width: 150px;
   width: 100%;
@@ -1570,10 +1809,12 @@ div:where(.swal2-container) div:where(.swal2-actions) {
   text-align: center;
   align-items: center;
 }
+
 @media (max-width: 500px) {
   .qrcode-box .item .info {
     font-size: 2.8vw;
   }
+
   .qrcode-box .item .qrcode-img img {
     max-width: 30vw;
     border-radius: 2vw;
@@ -1584,22 +1825,26 @@ div:where(.swal2-container) div:where(.swal2-actions) {
   div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
     font-size: 3.2vw !important;
   }
+
   .qrcode-box .item .info {
     font-size: 2.8vw;
   }
 }
+
 .thankyou {
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/our-story-bg.webp") no-repeat center/cover, url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-doan/base-our-story-bg.webp") no-repeat bottom/cover;
   max-width: 500px;
   width: 100%;
   aspect-ratio: 500/890;
 }
+
 .thankyou h2 {
   font-size: 20.83px;
   font-weight: 300;
   color: #5a3a21;
   margin-bottom: 6%;
 }
+
 .thankyou .photo {
   max-width: 305px;
   width: 100%;
@@ -1609,43 +1854,54 @@ div:where(.swal2-container) div:where(.swal2-actions) {
   overflow: hidden;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/PhuongChi-TheLam/album/7.webp") no-repeat 100% 34%/120%;
 }
+
 .thankyou .photo img {
   width: 120%;
   height: 100%;
   object-position: 100% 72%;
   object-fit: cover;
 }
+
 .thankyou .subtext {
   padding: 0 20%;
 }
+
 .thankyou .subtext .divider {
   margin-bottom: 6%;
 }
+
 .thankyou .subtext .divider img {
   width: 26px;
   height: auto;
 }
+
 .thankyou .subtext .divider:last-child img {
   transform: rotate(180deg);
 }
+
 .thankyou .subtext .text {
   text-align: justify;
   text-align-last: center;
 }
+
 .thankyou .subtext .text p {
   padding-bottom: 6%;
   line-height: 1.8;
 }
+
 @media (max-width: 500px) {
   .thankyou h2 {
     font-size: 4.166vw;
   }
+
   .thankyou .photo {
     max-width: 61vw;
   }
+
   .thankyou .subtext .divider img {
     width: 5.2vw;
   }
+
   .thankyou .subtext .text p {
     font-size: 2.2vw;
   }

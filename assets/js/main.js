@@ -710,10 +710,10 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = formType === "nhatrai"
-      ? "?sheet=nha_trai"
-      : "?sheet=nha_gai";
-
+    // const sheetURL = formType === "nhatrai"
+    //   ? "?sheet=nha_trai"
+    //   : "?sheet=nha_gai";
+    const sheetURL = 'https://script.google.com/macros/s/AKfycbzXLOTqQ6QMCmg2sGjE9S8rtYJMnNR6GN6BqPl_Nt4IMAzrL8Q7KYa0ZVMpRFWT0_D1/exec?sheet=confirm';
     try {
       const res = await fetch(sheetURL, {
         method: "POST",
@@ -787,7 +787,7 @@
       form.addEventListener("reset", () => window.setTimeout(updatePartyOptions));
       updatePartyOptions();
 
-      form.addEventListener("submit", (e) => handleFormSubmit(e, "nhagai", "vi"));
+      form.addEventListener("submit", (e) => handleFormSubmit(e, "confirm", "vi"));
     }
     // if (form_nhatrai) {
     //   form_nhatrai.addEventListener("submit", (e) => handleFormSubmit(e, "nhatrai", "vi"));
